@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Mostafa Mahdi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">MM<span style="color:var(--primary)">.</span></a>
+            <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="fade-in">Selected Work</h1>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <div class="project-card reveal">
+                        <div class="card-content">
+                            <span class="mono">Web3 / Security</span>
+                            <h2>MPC Wallet for Kaspa</h2>
+                            <p>Built the first self-custodial MPC (Multi-Party Computation) wallet for Kaspa on
+                                Telegram. Enables secure, non-custodial transactions with multi-chain support.</p>
+                            <div class="tags">
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Cryptography</span>
+                                <span class="tag">Telegram API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card reveal">
+                        <div class="card-content">
+                            <span class="mono">AI / Data</span>
+                            <h2>RAG-Based Sentiment Analysis</h2>
+                            <p>Implemented an advanced Twitter scraper and Retrieval-Augmented Generation (RAG) AI model
+                                to analyze real-time market sentiment for crypto assets.</p>
+                            <div class="tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">LLMs</span>
+                                <span class="tag">Data Pipelines</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card reveal">
+                        <div class="card-content">
+                            <span class="mono">Security Research</span>
+                            <h2>Auth0 Captcha Bypass</h2>
+                            <p>Developed a method for bypassing CAPTCHA challenges by programmatically dissecting SVG
+                                elements and reverse-engineering visual challenges.</p>
+                            <div class="tags">
+                                <span class="tag">Reverse Engineering</span>
+                                <span class="tag">Browser Automation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card reveal">
+                        <div class="card-content">
+                            <span class="mono">Hardware / Health</span>
+                            <h2>EKG Monitor System</h2>
+                            <p>Built an advanced EKG Monitor solution featured at Danish institutions. Integrated
+                                hardware sensors with software for real-time health tracking.</p>
+                            <div class="tags">
+                                <span class="tag">C++</span>
+                                <span class="tag">IoT</span>
+                                <span class="tag">Hardware</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mostafa Mahdi.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+    <style>
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media(max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .project-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.5rem;
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+            text-align: left;
+            /* Force left align */
+        }
+
+        .project-card h2 {
+            text-align: left;
+            /* Override global center */
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            background: var(--bg-card-hover);
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--accent-gradient);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .project-card:hover::before {
+            opacity: 1;
+        }
+
+        .tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+
+        .tag {
+            font-size: 0.8rem;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-muted);
+        }
+
+        .project-card:hover .tag {
+            background: rgba(0, 243, 255, 0.1);
+            color: var(--primary);
+        }
+
+        .btn-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        .btn-link:hover {
+            color: var(--primary);
+        }
+    </style>
+</body>
+
+</html>

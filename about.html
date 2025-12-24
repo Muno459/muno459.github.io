@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Mostafa Mahdi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">MM<span style="color:var(--primary)">.</span></a>
+            <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="fade-in">About Me</h1>
+                <div class="about-grid"
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+                    <div class="about-text fade-in delay-1">
+                        <p style="font-size: 1.1rem; color: var(--text-main);">
+                            I am a self-taught security researcher, Senior Web3 developer, and computer science student
+                            from Copenhagen, Denmark.
+                            I have a strong passion for cybersecurity, software development, and hardware integrations.
+                        </p>
+                        <p>
+                            With a track record of identifying and patching security flaws missed by larger firms, I
+                            thrive on bridging technology gaps through innovative approaches.
+                            From building MPC wallets to handwritten RSA encryption implementations, I love diving deep
+                            into the technical details.
+                        </p>
+
+                        <div style="margin-top: 2rem;">
+                            <h3 style="color: var(--primary); margin-bottom: 1rem;">Core Skills</h3>
+                            <ul style="list-style: none; display: flex; flex-wrap: wrap; gap: 1rem;">
+                                <li
+                                    style="background: rgba(255,255,255,0.05); padding: 0.5rem 1rem; border-radius: 4px;">
+                                    Cybersecurity</li>
+                                <li
+                                    style="background: rgba(255,255,255,0.05); padding: 0.5rem 1rem; border-radius: 4px;">
+                                    Web3 & Blockchain</li>
+                                <li
+                                    style="background: rgba(255,255,255,0.05); padding: 0.5rem 1rem; border-radius: 4px;">
+                                    TypeScript / Node.js</li>
+                                <li
+                                    style="background: rgba(255,255,255,0.05); padding: 0.5rem 1rem; border-radius: 4px;">
+                                    C# & Java</li>
+                                <li
+                                    style="background: rgba(255,255,255,0.05); padding: 0.5rem 1rem; border-radius: 4px;">
+                                    IoT Integration</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="about-image fade-in delay-2" style="position: relative;">
+                        <div
+                            style="width: 100%; height: auto; background: linear-gradient(45deg, #111, #222); border-radius: 20px; border: 1px solid var(--border-color); overflow: hidden; position: relative;">
+                            <img src="img/selfie.png" alt="Mostafa Mahdi" style="width: 100%; display: block;">
+
+                            <div
+                                style="position: absolute; bottom: 20px; right: 20px; width: 120px; height: 120px; border-radius: 50%; overflow: hidden; border: 3px solid var(--primary); box-shadow: 0 0 20px rgba(0,0,0,0.5);">
+                                <video src="img/memoji_face.mp4" autoplay muted loop playsinline
+                                    style="width: 100%; height: 100%; object-fit: cover;"></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-section" style="margin-top: 5rem;">
+                    <h2 class="fade-in">Experience</h2>
+
+                    <div class="timeline fade-in delay-3"
+                        style="border-left: 2px solid var(--border-color); padding-left: 2rem; margin-left: 1rem;">
+
+                        <div class="timeline-item" style="margin-bottom: 3rem; position: relative;">
+                            <div
+                                style="position: absolute; left: -2.6rem; top: 0; width: 1rem; height: 1rem; background: var(--primary); border-radius: 50%;">
+                            </div>
+                            <span class="mono">Jun 2024 - Present</span>
+                            <h3 style="margin: 0.5rem 0;">Security Lead & Senior Web3 Developer</h3>
+                            <p style="color: var(--primary);">XODEX, Dubai / Hybrid</p>
+                            <p>Built the first self-custodial MPC wallet for Kaspa. Implemented RAG-based AI models for
+                                market sentiment.</p>
+                        </div>
+
+                        <div class="timeline-item" style="margin-bottom: 3rem; position: relative;">
+                            <div
+                                style="position: absolute; left: -2.6rem; top: 0; width: 1rem; height: 1rem; background: var(--bg-card); border: 2px solid var(--text-muted); border-radius: 50%;">
+                            </div>
+                            <span class="mono">Mar 2024 - May 2024</span>
+                            <h3 style="margin: 0.5rem 0;">Information Security Analyst</h3>
+                            <p style="color: var(--primary);">Grindery Wallet, Singapore</p>
+                            <p>Conducted security audits revealing BGP exploits. Devised reward-system abuse prevention.
+                            </p>
+                        </div>
+
+                        <div class="timeline-item" style="margin-bottom: 3rem; position: relative;">
+                            <div
+                                style="position: absolute; left: -2.6rem; top: 0; width: 1rem; height: 1rem; background: var(--bg-card); border: 2px solid var(--text-muted); border-radius: 50%;">
+                            </div>
+                            <span class="mono">2015 - 2024</span>
+                            <h3 style="margin: 0.5rem 0;">Freelance Developer</h3>
+                            <p style="color: var(--primary);">Global</p>
+                            <p>Specialized in advanced automation, botting infrastructure, and browser automation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-section" style="margin-top: 3rem;">
+                    <h2 class="fade-in">Education & Certifications</h2>
+                    <div class="grid-2"
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                        <div class="card fade-in delay-1"
+                            style="background: var(--bg-card); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-color);">
+                            <h3>MIT xPRO</h3>
+                            <p class="mono">Full Stack Development with MERN</p>
+                            <p>Expected 2025</p>
+                        </div>
+                        <div class="card fade-in delay-2"
+                            style="background: var(--bg-card); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-color);">
+                            <h3>University of Copenhagen</h3>
+                            <p class="mono">B.Sc. in Computer Science</p>
+                            <p>Focus on algorithms & data structures</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mostafa Mahdi.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <style>
+        @media(max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</body>
+
+</html>

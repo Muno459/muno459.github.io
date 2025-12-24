@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Mostafa Mahdi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">MM<span style="color:var(--primary)">.</span></a>
+            <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="fade-in">Let's Connect</h1>
+
+                <div class="contact-wrapper"
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-top: 3rem;">
+
+                    <div class="contact-info fade-in delay-1">
+                        <p style="font-size: 1.25rem; color: var(--text-main);">
+                            Have a project in mind or just want to brainstorm? I’m open to collaborations, consulting,
+                            and long-term partnerships.
+                        </p>
+
+                        <div class="contact-methods"
+                            style="margin-top: 3rem; display: flex; flex-direction: column; gap: 2rem;">
+                            <a href="mailto:me@mostafa.dk" class="contact-item">
+                                <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <span class="label">Email</span>
+                                    <h3 class="value">me@mostafa.dk</h3>
+                                </div>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/mostafa-mm/" target="_blank" class="contact-item">
+                                <div class="icon-box"><i class="fab fa-linkedin-in"></i></div>
+                                <div>
+                                    <span class="label">LinkedIn</span>
+                                    <h3 class="value">linkedin.com/in/mostafa-mm</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="faq-section fade-in delay-2"
+                        style="background: var(--bg-card); padding: 2.5rem; border-radius: 16px; border: 1px solid var(--border-color);">
+                        <h2 style="font-size: 1.8rem;">FAQ</h2>
+
+                        <div class="faq-item">
+                            <h4>Are you open to full-time roles?</h4>
+                            <p>Yes, I am currently exploring opportunities where I can leverage my security and Web3
+                                expertise.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>What is your tech stack?</h4>
+                            <p>I focus on TypeScript/Node.js, C#, Python, and Solidity, heavily utilizing cloud
+                                infrastructure.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Do you do freelance work?</h4>
+                            <p>I occasionally take on high-impact freelance projects involving automation or security
+                                auditing.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mostafa Mahdi.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+    <style>
+        @media(max-width: 768px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            transition: transform 0.2s;
+        }
+
+        .contact-item:hover {
+            transform: translateX(10px);
+        }
+
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+
+        .contact-item:hover .icon-box {
+            background: var(--primary);
+            color: var(--bg-dark);
+            box-shadow: 0 0 20px var(--primary-dim);
+        }
+
+        .label {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 0.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .value {
+            font-size: 1.2rem;
+            color: var(--text-main);
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .faq-item {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 1rem;
+        }
+
+        .faq-item:last-child {
+            margin-bottom: 0;
+            border: none;
+        }
+
+        .faq-item h4 {
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-item p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+    </style>
+</body>
+
+</html>
